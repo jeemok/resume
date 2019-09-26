@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function MakeityourM2U() {
+export default function MakeItYourM2U() {
   const classes = useStyles();
   const theme = useTheme();
 
