@@ -55,7 +55,7 @@ export default function MakeItYourM2U() {
           Full stack developer
         </div>
 
-        <div>
+        <div style={{ fontSize: '0.7em' }}>
           <p>
             <EmailIcon style={{ fontSize: '0.9em', marginRight: 10 }} />
             jee.ict@hotmail.com

@@ -1,0 +1,111 @@
+[
+  {
+    "title": "Lead Developer",
+    "company": "Hokkaido Tourism Management Niseko",
+    "location": "Hokkaido, Japan",
+    "from": "2019-05-01",
+    "descriptions": [
+      "Hands on React development everyday. We practice DevOps culture and Agile methodology for project development. Main tools that we use here including Taiga Kanban for tasks & backlogs, BitBucket to store our code repository, Atlassian Confuence for documentation, and CircleCI for continuous integration. Setup with Bitbucket webhook functionality that whenever our main repository is changed, it will notify CircleCI and Taiga.io about the changes.",
+      "We practice Test Driven Development and our testing libraries including Jest, Mocha, Chai, Sinon, Enzyme and etc. We use ESLint for linting with additional rules. Other tools including: Egnyte (legacy system to share fles within the company) & Postman (handling REST & E2E live testing)"
+    ],
+    "tags": [
+      "DevOps", "Agile", "REST", "SaaS", "Google Cloud Platform", "Docker", "Kubernetes"
+    ]
+  },
+  {
+    "title": "Full Stack Developer",
+    "company": "Hokkaido Tourism Management Niseko",
+    "location": "Hokkaido, Japan",
+    "from": "2017-01-01",
+    "to": "2019-05-01",
+    "descriptions": [
+      "Working remotely for 11 months."
+    ],
+    "tags": [
+      "Remote"
+    ]
+  },
+  {
+    "title": "Project Manager / App Developer",
+    "company": "MYCiTY SME",
+    "location": "Kuala Lumpur, Malaysia",
+    "from": "2017-01-01",
+    "to": "2017-11-01",
+    "descriptions": [
+      "Met clients and gather requirements to hands on development to publish to PlayStore & AppStore. App features built including: SSO login (Facebook), user registration, payment integrations (Paypal also Cash on Delivery), Wordpress blog integrations, WooCommerce backend integrations (Products management, app features controls, orders tracking, wishlist management, fles managements, etc)",
+      "From meeting clients and gather requirements to hands-on development to publish to PlayStore & AppStore. App features built including SSO login (Facebook), user registration, payment integrations (Paypal also Cash on Delivery), Wordpress blog integrations, WooCommerce backend integrations (Products management, app features controls, orders tracking, wishlist management, files management, etc.)"
+    ]
+  },
+  {
+    "title": "IT Support Intern",
+    "company": "Hokkaido Tourism Management Niseko",
+    "location": "Hokkaido, Japan",
+    "from": "2016-06-01",
+    "to": "2016-12-01",
+    "descriptions": [
+      "My main job scopes are support and resolve internal company tickets, create documentation, manual and SOP for softwares and web tools for stafs, and maintain all the IT infrastructures within HTM. During my free time at work, I built a few systems to improve the existing ones:"
+    ],
+    "projects": [
+      {
+        "name": "Inventory System",
+        "description": "New web application system built with PHP & JavaScript. Replaced the existing Excel Inventory System used within the company with added features: Report printing, users management, multiple users view & printer management subsystem.",
+        "tags": []
+      },
+      {
+        "name": "FlipKey System",
+        "description": "An automated PHP script system used for managing hotels room information via WSDL & SOAP requests using cURL.",
+        "tags": []
+      },
+      {
+        "name": "Contracts Creator",
+        "description": "An automated tool built for HR department to create a large number of contracts. This tool was built using Macros in Microsoft Excel; it retrieves staff details from a .csv file, merges the information into a .doc template, and finally export each of them as a new contract file.",
+        "tags": []
+      },
+      {
+        "name": "Google Email Extractor",
+        "description": "A micro system written in Google Apps Script (GAS) used to compile the latest list of HTM email addresses from Google Contact; Scheduled to send the list back via email.",
+        "tags": ["Google App Script"]
+      }
+    ]
+  },
+  {
+    "title": "Web Developer",
+    "company": "The Picha Project",
+    "location": "Kuala Lumpur, Malaysia",
+    "from": "2016-03-01",
+    "to": "2016-06-01",
+    "descriptions": [
+      "Publish a website for a social enterprise called The Picha Project, which provides fnancial empowerment to the marginalised groups in Malaysia. Live: www.pichaproject.com"
+    ]
+  },
+  {
+    "title": "Web Developer",
+    "company": "Mevicco Group",
+    "location": "Kuala Lumpur, Malaysia",
+    "from": "2015-02-01",
+    "to": "2015-07-01",
+    "descriptions": [
+      "Publish and manage E-Commerce online fashion store using OpenCart. Maintain the system and resolve all the system problems and relevant faults."
+    ]
+  },
+  {
+    "title": "Web Developer Intern",
+    "company": "Sliver Interactive",
+    "location": "Kuala Lumpur, Malaysia",
+    "from": "2014-11-01",
+    "to": "2014-12-01",
+    "descriptions": [
+      "Built a small PHP system replacing the existing Excel system, that used for managing new website content more efciently and shorten the overall work progress. Install custom modules based on clients’ request, and learnt to enhance website’s ranking using Search Engine Optimisation."
+    ]
+  },
+  {
+    "title": "IT Operation Supervisor",
+    "company": "The Champs Cafe",
+    "location": "Kuala Lumpur, Malaysia",
+    "from": "2014-05-01",
+    "to": "2014-10-01",
+    "descriptions": [
+      "Built the official website and managed the social media site for the business. Trained and mentored new staff to update the system. Also designed the business logo for the new franchise brand Veggie Express which is now well- known across Malaysia in various location."
+    ]
+  }
+]

@@ -36,6 +36,48 @@ export default function Projects() {
       </div>
 
       <div style={{ margin: 10 }}>
+        Owner Portal
+        <p>
+          HTM Inhouse project
+        </p>
+        <p>
+          The Owner Portal is a portal for owners of HTM managed accommodations.
+          Designed to be able to view and manage many of the major aspects of their
+          property ownership through the new portal; including viewing their Owner
+          Statements, making and changing their Owner Bookings, requesting and
+          viewing payments and transactions, managing personal details, viewing
+          Occupancy information for their room, and communicating with our Owner
+          Team.
+        </p>
+      </div>
+
+      <div style={{ margin: 10 }}>
+        Bamboo Plus
+        <p>
+          HTM Inhouse project
+        </p>
+        <p>
+          HTM Internal (a.k.a. Bamboo Plus) is development project for internal tools.
+          The goal is to unify all of the small tools we use throughout the company
+          under one roof and also to make them easier and more convenient to use.
+          Integration of the above systems replaces the existing Timesheet system and
+          interfaces with third-party software - Bamboo HR in several ways.
+          Storefront
+          Storefront is the public-facing booking portal. Through this channel people
+          can browse HTM properties, see the prices and book or quote them, also take
+          payments through the portal. All of the information comes from GuestCentrix
+          and also ends up in the GuestCentrix.
+        </p>
+        <p>
+          Challenges
+        </p>
+        <p>
+          - Timezone
+        </p>
+      </div>
+
+
+      <div style={{ margin: 10 }}>
         OKingLegend App
         <p>
           Sep 2017
