@@ -8,6 +8,20 @@
       "Hands on React development everyday. We practice DevOps culture and Agile methodology for project development. Main tools that we use here including Taiga Kanban for tasks & backlogs, BitBucket to store our code repository, Atlassian Confuence for documentation, and CircleCI for continuous integration. Setup with Bitbucket webhook functionality that whenever our main repository is changed, it will notify CircleCI and Taiga.io about the changes.",
       "We practice Test Driven Development and our testing libraries including Jest, Mocha, Chai, Sinon, Enzyme and etc. We use ESLint for linting with additional rules. Other tools including: Egnyte (legacy system to share fles within the company) & Postman (handling REST & E2E live testing)"
     ],
+    "projects": [
+      {
+        "name": "Passport Scanner",
+        "tags": ["Java", "Loopback v4"]
+      },
+      {
+        "name": "Passport Scanner",
+        "tags": ["Java", "Loopback v4"]
+      },
+      {
+        "name": "Bamboo+",
+        "tags": []
+      },
+    ],
     "tags": [
       "DevOps", "Agile", "REST", "SaaS", "Google Cloud Platform", "Docker", "Kubernetes"
     ]
@@ -20,6 +34,26 @@
     "to": "2019-05-01",
     "descriptions": [
       "Working remotely for 11 months."
+    ],
+    "projects": [
+      {
+        "name": "Storefront",
+        "description": "Storefront is the public-facing booking portal. Through this channel people can browse HTM properties, see the prices and book or quote them, also take payments through the portal. All of the information comes from GuestCentrix and also ends up in the GuestCentrix.",
+        "tags": []
+      },
+      {
+        "name": "Bamboo+",
+        "description": "timezone, shift calculation.",
+        "tags": []
+      },
+      {
+        "name": "HTM Admin",
+        "tags": []
+      },
+      {
+        "name": "Owners Portal",
+        "tags": []
+      },
     ],
     "tags": [
       "Remote"
@@ -34,6 +68,16 @@
     "descriptions": [
       "Met clients and gather requirements to hands on development to publish to PlayStore & AppStore. App features built including: SSO login (Facebook), user registration, payment integrations (Paypal also Cash on Delivery), Wordpress blog integrations, WooCommerce backend integrations (Products management, app features controls, orders tracking, wishlist management, fles managements, etc)",
       "From meeting clients and gather requirements to hands-on development to publish to PlayStore & AppStore. App features built including SSO login (Facebook), user registration, payment integrations (Paypal also Cash on Delivery), Wordpress blog integrations, WooCommerce backend integrations (Products management, app features controls, orders tracking, wishlist management, files management, etc.)"
+    ],
+    "projects": [
+      {
+        "name": "OKingLegend Mobile App",
+        "tags": []
+      },
+      {
+        "name": "LFC Malaysia Mobile App",
+        "tags": []
+      },
     ]
   },
   {

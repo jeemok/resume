@@ -23,15 +23,55 @@ export default function Projects() {
 
   return (
     <div className={classes.root}>
-      Projects
+      Other Projects
+
+      <div style={{ margin: 10 }}>
+        PichaEats Ordering System
+        <p>
+          June 2019
+        </p>
+        <p>
+          Integrate with external systems: Payment, Invoice, Chat, etc. Tracking Google Analytics
+          and Pixels. Migration from existing wordpress server to GCP. Email client migration, Setup
+          new client using ZOHO and migrated DNS.
+
+          Using staging environment and production.
+        </p>
+        <p>
+          Website
+          <br />
+          All the static sites. SEO and designs.
+        </p>
+        <p>
+          Cart
+          <br />
+          Items to cart and checkout. Google map API for real data address. Persistency of user's cart.
+          Promo code system.
+        </p>
+        <p>
+          Catering
+          <br />
+          Customize menu.
+        </p>
+        <p>
+          Management Backend
+          <br />
+          Delivery area, menu, items, etc.
+        </p>
+        <p>
+          Blog
+          <br />
+          using wordpress?
+        </p>
+      </div>
 
       <div style={{ margin: 10 }}>
         Instructors management system
         <p>
-          June 2020
+          June 2019
         </p>
         <p>
-          to manage daily.
+          to manage daily instructors shifts.
         </p>
       </div>
 
@@ -62,11 +102,6 @@ export default function Projects() {
           under one roof and also to make them easier and more convenient to use.
           Integration of the above systems replaces the existing Timesheet system and
           interfaces with third-party software - Bamboo HR in several ways.
-          Storefront
-          Storefront is the public-facing booking portal. Through this channel people
-          can browse HTM properties, see the prices and book or quote them, also take
-          payments through the portal. All of the information comes from GuestCentrix
-          and also ends up in the GuestCentrix.
         </p>
         <p>
           Challenges
