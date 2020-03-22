@@ -45,14 +45,20 @@ export default function MakeItYourM2U() {
     <div>
       Open Sources
       <br />
-      
+
       <div style={{ margin: 10 }}>
-        NPM Audit Handler
-        <br />
-        jeemok/better-npm-audit
-        Last commit on Dec 25, 19
-        18 Commits / 331 ++ / 53 --
-        NPM Audit Handler
+        <a href="https://www.npmjs.com/package/better-npm-audit" style={{ display: 'block' }}>
+          Better NPM Audit
+        </a>
+
+        <div style={{ fontSize: '0.8rem', marginBottom: '10px' }}>
+          Made to allow skipping certain vulnerabilities, and any extra handling that are not supported by the default npm audit in the future.
+        </div>
+
+        <img
+          src="https://nodei.co/npm/better-npm-audit.png?downloads=true&downloadRank=true&stars=true"
+          style={{ display: 'block', maxWidth: '300px' }}
+        />
       </div>
     </div>
   );

@@ -12,9 +12,14 @@ import Projects from '../containers/projects/projects';
 import OpenSources from '../containers/openSources/libraries';
 import Reviews from '../containers/reviews/reviews';
 
+// Ref: https://stackoverflow.com/cv/mok
+
+// TODO:
+//  - eslint
+
 export default function Index() {
   return (
-    <Container style={{ fontFamily: 'arial' }}>
+    <Container style={{ fontFamily: 'arial' }} maxWidth="md">
       {/* <img src="/static/portrait.jpg" alt="Mok's portrait" style={{ maxWidth: 200, borderRadius: 5 }} /> */}
       <Biography />
 
@@ -28,7 +33,13 @@ export default function Index() {
       <Divider />
       <br />
 
-      <Education />
+      <Projects />
+
+      <br />
+      <Divider />
+      <br />
+
+      <OpenSources />
 
       <br />
       <Divider />
@@ -46,13 +57,7 @@ export default function Index() {
       <Divider />
       <br />
 
-      <Projects />
-
-      <br />
-      <Divider />
-      <br />
-
-      <Languages />
+      <Education />
 
       <br />
       <Divider />
@@ -64,7 +69,7 @@ export default function Index() {
       <Divider />
       <br />
 
-      <OpenSources />
+      <Languages />
     </Container>
   );
 }

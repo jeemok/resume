@@ -27,15 +27,20 @@ export default function Projects() {
 
       <div style={{ margin: 10 }}>
         PichaEats Ordering System
-        <p>
+        {/* <p>
           June 2019
-        </p>
+        </p> */}
         <p>
+          PichaEats (rebrand from The Picha Project) has been growing a lot over the years. The initial solution of using WordPress no
+          longer work well with the size and has to grow. Building a new website system that comes with
+          a ordering capability and integrate with external systems. making sure it is scalable for
+          any requirements in the future.
+
           Integrate with external systems: Payment, Invoice, Chat, etc. Tracking Google Analytics
           and Pixels. Migration from existing wordpress server to GCP. Email client migration, Setup
           new client using ZOHO and migrated DNS.
 
-          Using staging environment and production.
+          Development mode: Using staging environment and production.
         </p>
         <p>
           Website
@@ -72,42 +77,6 @@ export default function Projects() {
         </p>
         <p>
           to manage daily instructors shifts.
-        </p>
-      </div>
-
-      <div style={{ margin: 10 }}>
-        Owner Portal
-        <p>
-          HTM Inhouse project
-        </p>
-        <p>
-          The Owner Portal is a portal for owners of HTM managed accommodations.
-          Designed to be able to view and manage many of the major aspects of their
-          property ownership through the new portal; including viewing their Owner
-          Statements, making and changing their Owner Bookings, requesting and
-          viewing payments and transactions, managing personal details, viewing
-          Occupancy information for their room, and communicating with our Owner
-          Team.
-        </p>
-      </div>
-
-      <div style={{ margin: 10 }}>
-        Bamboo Plus
-        <p>
-          HTM Inhouse project
-        </p>
-        <p>
-          HTM Internal (a.k.a. Bamboo Plus) is development project for internal tools.
-          The goal is to unify all of the small tools we use throughout the company
-          under one roof and also to make them easier and more convenient to use.
-          Integration of the above systems replaces the existing Timesheet system and
-          interfaces with third-party software - Bamboo HR in several ways.
-        </p>
-        <p>
-          Challenges
-        </p>
-        <p>
-          - Timezone
         </p>
       </div>
 

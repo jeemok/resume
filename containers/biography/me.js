@@ -47,27 +47,27 @@ export default function MakeItYourM2U() {
       </div>
 
       <div style={{ display: 'inline-block', marginLeft: 20 }}>
-        <h1>
+        <div style={{ marginTop: '50px', fontSize: '1.5rem', fontWeight: 'bold' }}>
           Hi, I'm Mok
-        </h1>
+        </div>
 
-        <div>
+        <div style={{ marginTop: '5px', fontSize: '0.8rem' }}>
           Full stack developer
         </div>
 
-        <div style={{ fontSize: '0.7em' }}>
-          <p>
-            <EmailIcon style={{ fontSize: '0.9em', marginRight: 10 }} />
+        <div style={{ marginTop: '10px', fontSize: '0.7rem' }}>
+          <div>
+            <EmailIcon style={{ fontSize: '0.7rem', marginRight: 10 }} />
             jee.ict@hotmail.com
-          </p>
-          <p>
-            <ForumIcon style={{ fontSize: '0.9em', marginRight: 10 }} />
+          </div>
+          <div>
+            <ForumIcon style={{ fontSize: '0.7rem', marginRight: 10 }} />
             Speaks English, 中文, 广东话, 日本語, Melayu
-          </p>
-          <p>
-            <WorkIcon style={{ fontSize: '0.9em', marginRight: 10 }} />
+          </div>
+          <div>
+            <WorkIcon style={{ fontSize: '0.7rem', marginRight: 10 }} />
             Work: Hokkaido, Japan
-          </p>
+          </div>
         </div>
       </div>
 
