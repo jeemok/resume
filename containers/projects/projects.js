@@ -41,6 +41,9 @@ export default function Projects() {
           new client using ZOHO and migrated DNS.
 
           Development mode: Using staging environment and production.
+
+          Tech Stacks: React, Material UI, Express
+          Repository and Task Management: GitHub
         </p>
         <p>
           Website

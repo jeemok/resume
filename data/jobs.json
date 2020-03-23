@@ -6,7 +6,8 @@
     "from": "2019-05-01",
     "descriptions": [
       "Hands on React development everyday. We practice DevOps culture and Agile methodology for project development. Main tools that we use here including Taiga Kanban for tasks & backlogs, BitBucket to store our code repository, Atlassian Confuence for documentation, and CircleCI for continuous integration. Setup with Bitbucket webhook functionality that whenever our main repository is changed, it will notify CircleCI and Taiga.io about the changes.",
-      "We practice Test Driven Development and our testing libraries including Jest, Mocha, Chai, Sinon, Enzyme and etc. We use ESLint for linting with additional rules. Other tools including: Egnyte (legacy system to share fles within the company) & Postman (handling REST & E2E live testing)"
+      "We practice Test Driven Development and our testing libraries including Jest, Mocha, Chai, Sinon, Enzyme and etc. We use ESLint for linting with additional rules. Other tools including: Egnyte (legacy system to share fles within the company) & Postman (handling REST & E2E live testing)",
+      "Task Management: Jira"
     ],
     "projects": [
       {
@@ -30,7 +31,8 @@
     "from": "2017-01-01",
     "to": "2019-05-01",
     "descriptions": [
-      "Working remotely for 11 months."
+      "Working remotely for 11 months. \n Productivity tracking tools: Toggle",
+      "Task Management: Taiga"
     ],
     "projects": [
       {

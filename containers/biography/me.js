@@ -53,6 +53,9 @@ export default function MakeItYourM2U() {
 
         <div style={{ marginTop: '5px', fontSize: '0.8rem' }}>
           Full stack developer
+          <br />
+          Have you ever felt that sensation that tells you something is wrong while reading your code? That feeling of “mmm something doesn’t look ok” but still, you don’t precisely get what the issue is?
+          This weird feeling is that you get from your code is the correct intuition. These are bad practices, better known as code smells.
         </div>
 
         <div style={{ marginTop: '10px', fontSize: '0.7rem' }}>
