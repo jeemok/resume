@@ -1,13 +1,9 @@
 import React from 'react';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Box, Typography } from '@material-ui/core';
+import Header from '../../components/common/header';
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    // '& p': {
-    //   fontSize: '0.8rem',
-    // },
-  },
 }));
 
 export default function Hobbies() {
@@ -15,17 +11,17 @@ export default function Hobbies() {
   const theme = useTheme();
 
   return (
-    <Box className={classes.root}>
-      <Typography variant="h5">
-        Hobbies
-      </Typography>
+    <Box>
+      <Header title="Hobbies" />
 
-      <Typography variant="h5">
-        Snowboarding
-      </Typography>
-      <Typography variant="body2">
-        Canada Avalanche Safety training 1 certified
-      </Typography>
+      <Box m={1}>
+        <Typography variant="subtitle">
+          Snowboarding
+        </Typography>
+        <Typography variant="body2">
+          Canada Avalanche Safety training 1 certified
+        </Typography>
+      </Box>
     </Box>
   );
 }

@@ -2,15 +2,18 @@ import React, { Children } from 'react';
 import PropTypes from 'prop-types';
 import { DateTime } from 'luxon';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { Box, Typography } from '@material-ui/core';
+
+import ExpansionPanel from '@material-ui/core/ExpansionPanel';
+import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import DateRangeIcon from '@material-ui/icons/DateRange';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 const DATE_FORMAT = 'MMM yyyy'; // e.g. Jan 2019
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    marginBottom: '25px',
-  },
   company: {
     fontSize: '0.8em',
     color: '#3e75c8',
@@ -57,6 +60,15 @@ const useStyles = makeStyles(theme => ({
     fontSize: '0.9em',
     marginBottom: '5px',
   },
+  panel: {
+    boxShadow: 'none',
+  },
+  summary: {
+    padding: 0,
+  },
+  details: {
+    padding: '10px',
+  },
 }));
 
 const experience = props => {
@@ -66,7 +78,7 @@ const experience = props => {
   const theme = useTheme();
 
   return (
-    <div className={classes.root}>
+    <Box mb={3}>
       {/* Role title */}
       <div>
         { title }
@@ -97,7 +109,7 @@ const experience = props => {
       {/* Description paragraphs */}
       {
         Array.isArray(descriptions) && Children.toArray(
-          descriptions.map(desc => <p>{ desc }</p>)
+          descriptions.map(desc => <p style={{ fontSize: '0.8rem' }}>{ desc }</p>)
         )
       }
 
@@ -112,30 +124,47 @@ const experience = props => {
       }
 
       {/* Projects */}
-      {
-        Array.isArray(projects) && Children.toArray(
-          projects.map(project => (
-            <div className={classes.project}>
-              <div className={classes.projectName}>
-                { project.name }
-              </div>
-              <div className={classes.projectDescription}>
-                { project.description }
-              </div>
-              {
-                Array.isArray(project.tags) && Children.toArray(
-                  project.tags.map(tag => (
-                    <div className={classes.tag}>
-                      { tag }
+      <ExpansionPanel className={classes.panel}>
+        <ExpansionPanelSummary
+          expandIcon={<ExpandMoreIcon />}
+          id="panel1a-header"
+          aria-controls="panel1a-content"
+          className={classes.summary}
+        >
+          <Typography variant="subtitle">
+            Projects
+          </Typography>
+        </ExpansionPanelSummary>
+
+        <ExpansionPanelDetails className={classes.details}>
+          <div>
+            {
+              Array.isArray(projects) && Children.toArray(
+                projects.map(project => (
+                  <div className={classes.project}>
+                    <div className={classes.projectName}>
+                      { project.name }
                     </div>
-                  ))
-                )
-              }
-            </div>
-          ))
-        )
-      }
-    </div>
+                    <div className={classes.projectDescription}>
+                      { project.description }
+                    </div>
+                    {
+                      Array.isArray(project.tags) && Children.toArray(
+                        project.tags.map(tag => (
+                          <div className={classes.tag}>
+                            { tag }
+                          </div>
+                        ))
+                      )
+                    }
+                  </div>
+                ))
+              )
+            }
+          </div>
+        </ExpansionPanelDetails>
+      </ExpansionPanel>
+    </Box>
   );
 }
 

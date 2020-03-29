@@ -1,5 +1,7 @@
 import React from 'react';
+import { Box, Typography } from '@material-ui/core';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
+import Header from '../../components/common/header';
 
 const useStyles = makeStyles(theme => ({
 }));
@@ -9,10 +11,10 @@ export default function Languages() {
   const theme = useTheme();
 
   return (
-    <div>
-      Languages
+    <Box>
+      <Header title="Languages" />
 
-      <div style={{ margin: 10 }}>
+      <Box m={1}>
         <p>
           English
         </p>
@@ -36,7 +38,7 @@ export default function Languages() {
             <li>N5 Certified on July 2019</li>
           </ul>
         </p>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

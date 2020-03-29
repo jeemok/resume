@@ -1,7 +1,7 @@
 import React, { Children } from 'react';
 import { DateTime } from 'luxon';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { Typography } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
 import DateRangeIcon from '@material-ui/icons/DateRange';
 import Header from '../../components/common/header';
 
@@ -10,9 +10,6 @@ const DATE_FORMAT = 'MMM yyyy'; // e.g. Jan 2019
 const EDUCATIONS = require('../../data/educations');
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    marginBottom: '25px',
-  },
   school: {
     fontSize: '0.8em',
     color: '#3e75c8',
@@ -39,13 +36,13 @@ export default () => {
   const theme = useTheme();
 
   return (
-    <div>
+    <Box>
       <Header title="Education" />
 
-      <div style={{ margin: 10 }}>
+      <Box m={1}>
         {
           EDUCATIONS.map(education => (
-            <div className={classes.root}>
+            <Box>
               <div>
                 { education.title }
               </div>
@@ -68,10 +65,10 @@ export default () => {
                   education.descriptions.map(desc => <p className={classes.description}>{ desc }</p>)
                 )
               }
-            </div>
+            </Box>
           ))
         }
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

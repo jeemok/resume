@@ -7,7 +7,7 @@ const useStyles = makeStyles(() => ({
   title: {
     color: '#2469a3',
     fontWeight: 'bold',
-    fontSize: '1.2rem',
+    fontSize: '1rem',
   },
   author: {
     color: '#8a8a8a',
@@ -22,7 +22,7 @@ const Review = props => {
   const isMobile = useMediaQuery(theme.breakpoints.down('xs'));
 
   return (
-    <Box p={2}>
+    <Box mb={3}>
       <Typography variant="h5" className={classes.title}>
         "
         {title}

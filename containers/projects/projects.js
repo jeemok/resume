@@ -1,20 +1,9 @@
 import React from 'react';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import SkipNextIcon from '@material-ui/icons/SkipNext';
+import { Box, Typography } from '@material-ui/core';
+import Header from '../../components/common/header';
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    '& p': {
-      fontSize: '0.8rem',
-    },
-  },
 }));
 
 export default function Projects() {
@@ -22,70 +11,78 @@ export default function Projects() {
   const theme = useTheme();
 
   return (
-    <div className={classes.root}>
-      Other Projects
+    <Box>
+      <Header title="Other Projects" />
 
-      <div style={{ margin: 10 }}>
-        PichaEats Ordering System
+      <Box m={2}>
+        <Typography variant="subtitle">
+          PichaEats Ordering System
+        </Typography>
         {/* <p>
           June 2019
         </p> */}
-        <p>
+        <Typography variant="body2" style={{ color: 'grey' }}>
           PichaEats (rebrand from The Picha Project) has been growing a lot over the years. The initial solution of using WordPress no
           longer work well with the size and has to grow. Building a new website system that comes with
           a ordering capability and integrate with external systems. making sure it is scalable for
           any requirements in the future.
-
+          <br />
           Integrate with external systems: Payment, Invoice, Chat, etc. Tracking Google Analytics
           and Pixels. Migration from existing wordpress server to GCP. Email client migration, Setup
           new client using ZOHO and migrated DNS.
-
+          <br />
           Development mode: Using staging environment and production.
-
+          <br />
           Tech Stacks: React, Material UI, Express
           Repository and Task Management: GitHub
-        </p>
-        <p>
-          Website
-          <br />
-          All the static sites. SEO and designs.
-        </p>
-        <p>
-          Cart
-          <br />
-          Items to cart and checkout. Google map API for real data address. Persistency of user's cart.
-          Promo code system.
-        </p>
-        <p>
-          Catering
-          <br />
-          Customize menu.
-        </p>
-        <p>
-          Management Backend
-          <br />
-          Delivery area, menu, items, etc.
-        </p>
-        <p>
-          Blog
-          <br />
-          using wordpress?
-        </p>
-      </div>
 
-      <div style={{ margin: 10 }}>
-        Instructors management system
+          <p>
+            Website
+            <br />
+            All the static sites. SEO and designs.
+          </p>
+          <p>
+            Cart
+            <br />
+            Items to cart and checkout. Google map API for real data address. Persistency of user's cart.
+            Promo code system.
+          </p>
+          <p>
+            Catering
+            <br />
+            Customize menu.
+          </p>
+          <p>
+            Management Backend
+            <br />
+            Delivery area, menu, items, etc.
+          </p>
+          <p>
+            Blog
+            <br />
+            using wordpress?
+          </p>
+        </Typography>
+      </Box>
+
+      <Box m={2}>
+        <Typography variant="subtitle">
+          Ski School Management System
+        </Typography>
+
         <p>
           June 2019
         </p>
-        <p>
-          to manage daily instructors shifts.
-        </p>
-      </div>
+        <Typography variant="body2">
+          Manage daily instructors rosters and training.
+        </Typography>
+      </Box>
 
+      <Box m={2}>
+        <Typography variant="subtitle">
+          OKingLegend App
+        </Typography>
 
-      <div style={{ margin: 10 }}>
-        OKingLegend App
         <p>
           Sep 2017
         </p>
@@ -97,10 +94,12 @@ export default function Projects() {
           <br />
           https://play.google.com/store/apps/details?id=com.okinglegend.okinglegendapp&hl=en
         </p>
-      </div>
+      </Box>
 
-      <div style={{ margin: 10 }}>
-        LFC Malaysia App
+      <Box m={2}>
+        <Typography variant="subtitle">
+          LFC Malaysia App
+        </Typography>
         <p>
           Jun 2017
         </p>
@@ -112,7 +111,7 @@ export default function Projects() {
           <br />
           https://play.google.com/store/apps/details?id=com.nav.lfc&hl=en
         </p>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

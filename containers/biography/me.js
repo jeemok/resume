@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { Box, Typography } from '@material-ui/core';
 
 import EmailIcon from '@material-ui/icons/Email';
 import ForumIcon from '@material-ui/icons/Forum';
@@ -41,23 +42,24 @@ export default function MakeItYourM2U() {
   const theme = useTheme();
 
   return (
-    <div>
-      <div style={{ display: 'inline-block' }}>
-        <img src={PORTRAIT} alt="Mok's Portrait" style={{ maxWidth: 100, borderRadius: '50%' }} />
-      </div>
+    <Box align="center" mt={5}>
+      <img
+        src={PORTRAIT}
+        alt="Mok's Portrait"
+        style={{ maxWidth: 100, borderRadius: '50%' }}
+      />
 
-      <div style={{ display: 'inline-block', marginLeft: 20 }}>
-        <div style={{ marginTop: '50px', fontSize: '1.5rem', fontWeight: 'bold' }}>
-          Hi, I'm Mok
-        </div>
+      <Box>
+        <Typography style={{ fontSize: '1.5rem' }}>
+          Mok Yun Liu
+        </Typography>
 
-        <div style={{ marginTop: '5px', fontSize: '0.8rem' }}>
-          Full stack developer
-          <br />
-          Have you ever felt that sensation that tells you something is wrong while reading your code? That feeling of “mmm something doesn’t look ok” but still, you don’t precisely get what the issue is?
-          This weird feeling is that you get from your code is the correct intuition. These are bad practices, better known as code smells.
-        </div>
+        <Typography style={{ fontSize: '0.8rem', fontWeight: 'bold', color: '#2c60a4' }}>
+          DevOps Engineer
+        </Typography>
+      </Box>
 
+      <Box>
         <div style={{ marginTop: '10px', fontSize: '0.7rem' }}>
           <div>
             <EmailIcon style={{ fontSize: '0.7rem', marginRight: 10 }} />
@@ -72,9 +74,9 @@ export default function MakeItYourM2U() {
             Work: Hokkaido, Japan
           </div>
         </div>
-      </div>
+      </Box>
 
       <img src={GCP_ICON} alt="GCP icon" style={{ maxWidth: 50, position: 'absolute', top: 10, right: 10 }} />
-    </div>
+    </Box>
   );
 }
