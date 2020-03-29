@@ -117,7 +117,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_LocationOn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/LocationOn */ "@material-ui/icons/LocationOn");
 /* harmony import */ var _material_ui_icons_LocationOn__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_LocationOn__WEBPACK_IMPORTED_MODULE_6__);
 
-var _jsxFileName = "C:\\Users\\mok.liu\\Projects\\resume\\components\\awards\\Achievement.js";
+var _jsxFileName = "/Users/jeemok/tincode/resume/components/awards/Achievement.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -232,6 +232,57 @@ achievement.PropTypes = {
 
 /***/ }),
 
+/***/ "./components/common/header.js":
+/*!*************************************!*\
+  !*** ./components/common/header.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "/Users/jeemok/tincode/resume/components/common/header.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
+  heading: {
+    fontSize: theme.typography.pxToRem(15),
+    fontWeight: theme.typography.fontWeightBold,
+    color: '#315893'
+  }
+}));
+
+const Header = props => {
+  const classes = useStyles();
+  const theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["useTheme"])();
+  return __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    className: classes.heading,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
+  }, props.title);
+};
+
+Header.propTypes = {
+  title: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
 /***/ "./components/experiences/experience.js":
 /*!**********************************************!*\
   !*** ./components/experiences/experience.js ***!
@@ -256,7 +307,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_LocationOn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/LocationOn */ "@material-ui/icons/LocationOn");
 /* harmony import */ var _material_ui_icons_LocationOn__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_LocationOn__WEBPACK_IMPORTED_MODULE_6__);
 
-var _jsxFileName = "C:\\Users\\mok.liu\\Projects\\resume\\components\\experiences\\experience.js";
+var _jsxFileName = "/Users/jeemok/tincode/resume/components/experiences/experience.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -450,6 +501,107 @@ experience.PropTypes = {
 
 /***/ }),
 
+/***/ "./components/reviews/review.js":
+/*!**************************************!*\
+  !*** ./components/reviews/review.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "/Users/jeemok/tincode/resume/components/reviews/review.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+
+const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(() => ({
+  title: {
+    color: '#2469a3',
+    fontWeight: 'bold',
+    fontSize: '1.2rem'
+  },
+  author: {
+    color: '#8a8a8a',
+    fontSize: '0.7rem'
+  }
+}));
+
+const Review = props => {
+  const {
+    title,
+    by,
+    date,
+    descrption
+  } = props;
+  const classes = useStyles();
+  const theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["useTheme"])();
+  const isMobile = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["useMediaQuery"])(theme.breakpoints.down('xs'));
+  return __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    p: 2,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: undefined
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
+    variant: "h5",
+    className: classes.title,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: undefined
+  }, "\"", title, "\""), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
+    variant: "body1",
+    className: classes.author,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: undefined
+  }, by, __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: undefined
+  }), date), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    mt: 2,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: undefined
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
+    variant: "body2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: undefined
+  }, descrption)));
+};
+
+Review.propTypes = {
+  title: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string.isRequired,
+  by: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string.isRequired,
+  date: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string.isRequired,
+  descrption: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string.isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (Review);
+
+/***/ }),
+
 /***/ "./containers/awards/awards.js":
 /*!*************************************!*\
   !*** ./containers/awards/awards.js ***!
@@ -465,7 +617,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_awards_Achievement__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/awards/Achievement */ "./components/awards/Achievement.js");
-var _jsxFileName = "C:\\Users\\mok.liu\\Projects\\resume\\containers\\awards\\awards.js";
+var _jsxFileName = "/Users/jeemok/tincode/resume/containers/awards/awards.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -567,7 +719,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_PlayArrow__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_PlayArrow__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _material_ui_icons_SkipNext__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/icons/SkipNext */ "@material-ui/icons/SkipNext");
 /* harmony import */ var _material_ui_icons_SkipNext__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_SkipNext__WEBPACK_IMPORTED_MODULE_12__);
-var _jsxFileName = "C:\\Users\\mok.liu\\Projects\\resume\\containers\\awards\\news.js";
+var _jsxFileName = "/Users/jeemok/tincode/resume/containers/awards/news.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -846,7 +998,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\mok.liu\\Projects\\resume\\containers\\biography\\languages.js";
+var _jsxFileName = "/Users/jeemok/tincode/resume/containers/biography/languages.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -945,7 +1097,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_Forum__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Forum__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _material_ui_icons_Work__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/Work */ "@material-ui/icons/Work");
 /* harmony import */ var _material_ui_icons_Work__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Work__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "C:\\Users\\mok.liu\\Projects\\resume\\containers\\biography\\me.js";
+var _jsxFileName = "/Users/jeemok/tincode/resume/containers/biography/me.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -1042,20 +1194,26 @@ function MakeItYourM2U() {
       lineNumber: 54
     },
     __self: this
-  }, "Full stack developer"), __jsx("div", {
+  }, "Full stack developer", __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
+  }), "Have you ever felt that sensation that tells you something is wrong while reading your code? That feeling of \u201Cmmm something doesn\u2019t look ok\u201D but still, you don\u2019t precisely get what the issue is? This weird feeling is that you get from your code is the correct intuition. These are bad practices, better known as code smells."), __jsx("div", {
     style: {
       marginTop: '10px',
       fontSize: '0.7rem'
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 61
     },
     __self: this
   }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 62
     },
     __self: this
   }, __jsx(_material_ui_icons_Email__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -1065,13 +1223,13 @@ function MakeItYourM2U() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 63
     },
     __self: this
   }), "jee.ict@hotmail.com"), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 66
     },
     __self: this
   }, __jsx(_material_ui_icons_Forum__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1081,13 +1239,13 @@ function MakeItYourM2U() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 67
     },
     __self: this
   }), "Speaks English, \u4E2D\u6587, \u5E7F\u4E1C\u8BDD, \u65E5\u672C\u8A9E, Melayu"), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 70
     },
     __self: this
   }, __jsx(_material_ui_icons_Work__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1097,7 +1255,7 @@ function MakeItYourM2U() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 71
     },
     __self: this
   }), "Work: Hokkaido, Japan"))), __jsx("img", {
@@ -1105,11 +1263,13 @@ function MakeItYourM2U() {
     alt: "GCP icon",
     style: {
       maxWidth: 50,
-      float: 'right'
+      position: 'absolute',
+      top: 10,
+      right: 10
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 77
     },
     __self: this
   }));
@@ -1134,11 +1294,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var luxon__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(luxon__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_ui_icons_DateRange__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/DateRange */ "@material-ui/icons/DateRange");
-/* harmony import */ var _material_ui_icons_DateRange__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_DateRange__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_icons_DateRange__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/DateRange */ "@material-ui/icons/DateRange");
+/* harmony import */ var _material_ui_icons_DateRange__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_DateRange__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_common_header__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/common/header */ "./components/common/header.js");
 
-var _jsxFileName = "C:\\Users\\mok.liu\\Projects\\resume\\containers\\education\\education.js";
+var _jsxFileName = "/Users/jeemok/tincode/resume/containers/education/education.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
 
 
 
@@ -1169,15 +1334,6 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["
   },
   description: {
     fontSize: '0.8em'
-  },
-  tag: {
-    display: 'inline-block',
-    background: '#e8f3ff',
-    color: '#3376ac',
-    borderRadius: '2px',
-    padding: '5px 8px',
-    marginRight: '5px',
-    fontSize: '0.6em'
   }
 }));
 /* harmony default export */ __webpack_exports__["default"] = (() => {
@@ -1186,73 +1342,67 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 42
     },
     __self: undefined
-  }, __jsx("div", {
+  }, __jsx(_components_common_header__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    title: "Education",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 43
     },
     __self: undefined
-  }, "Education"), __jsx("div", {
+  }), __jsx("div", {
     style: {
       margin: 10
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 45
     },
     __self: undefined
   }, EDUCATIONS.map(education => __jsx("div", {
     className: classes.root,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 48
     },
     __self: undefined
   }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 49
     },
     __self: undefined
   }, education.title), __jsx("div", {
     className: classes.school,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 53
     },
     __self: undefined
   }, education.school), __jsx("div", {
     className: classes.subTitle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 57
     },
     __self: undefined
-  }, __jsx(_material_ui_icons_DateRange__WEBPACK_IMPORTED_MODULE_4___default.a, {
+  }, __jsx(_material_ui_icons_DateRange__WEBPACK_IMPORTED_MODULE_5___default.a, {
     className: classes.icon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 58
     },
     __self: undefined
   }), luxon__WEBPACK_IMPORTED_MODULE_2__["DateTime"].fromISO(education.from).toFormat(DATE_FORMAT), "\xA0 - \xA0", education.to ? luxon__WEBPACK_IMPORTED_MODULE_2__["DateTime"].fromISO(education.to).toFormat(DATE_FORMAT) : 'Present'), _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default()(education.descriptions) && react__WEBPACK_IMPORTED_MODULE_1__["Children"].toArray(education.descriptions.map(desc => __jsx("p", {
     className: classes.description,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 68
     },
     __self: undefined
-  }, desc))), _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default()(education.tags) && react__WEBPACK_IMPORTED_MODULE_1__["Children"].toArray(education.tags.map(tag => __jsx("div", {
-    className: classes.tag,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 84
-    },
-    __self: undefined
-  }, tag)))))));
+  }, desc)))))));
 });
 
 /***/ }),
@@ -1284,7 +1434,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_LocationOn__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/LocationOn */ "@material-ui/icons/LocationOn");
 /* harmony import */ var _material_ui_icons_LocationOn__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_LocationOn__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _components_experiences_experience__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/experiences/experience */ "./components/experiences/experience.js");
-var _jsxFileName = "C:\\Users\\mok.liu\\Projects\\resume\\containers\\experiences\\experiences.js";
+var _jsxFileName = "/Users/jeemok/tincode/resume/containers/experiences/experiences.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -1385,6 +1535,69 @@ function MakeItYourM2U() {
 
 /***/ }),
 
+/***/ "./containers/hobbies/hobbies.js":
+/*!***************************************!*\
+  !*** ./containers/hobbies/hobbies.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Hobbies; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/jeemok/tincode/resume/containers/hobbies/hobbies.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
+  root: {// '& p': {
+    //   fontSize: '0.8rem',
+    // },
+  }
+}));
+function Hobbies() {
+  const classes = useStyles();
+  const theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["useTheme"])();
+  return __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+    className: classes.root,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
+    variant: "h5",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "Hobbies"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
+    variant: "h5",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, "Snowboarding"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
+    variant: "body2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, "Canada Avalanche Safety training 1 certified"));
+}
+
+/***/ }),
+
 /***/ "./containers/openSources/libraries.js":
 /*!*********************************************!*\
   !*** ./containers/openSources/libraries.js ***!
@@ -1415,7 +1628,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_PlayArrow__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_PlayArrow__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _material_ui_icons_SkipNext__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/SkipNext */ "@material-ui/icons/SkipNext");
 /* harmony import */ var _material_ui_icons_SkipNext__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_SkipNext__WEBPACK_IMPORTED_MODULE_9__);
-var _jsxFileName = "C:\\Users\\mok.liu\\Projects\\resume\\containers\\openSources\\libraries.js";
+var _jsxFileName = "/Users/jeemok/tincode/resume/containers/openSources/libraries.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -1502,7 +1715,7 @@ function MakeItYourM2U() {
     src: "https://nodei.co/npm/better-npm-audit.png?downloads=true&downloadRank=true&stars=true",
     style: {
       display: 'block',
-      maxWidth: '300px'
+      maxWidth: '250px'
     },
     __source: {
       fileName: _jsxFileName,
@@ -1544,7 +1757,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_PlayArrow__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_PlayArrow__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _material_ui_icons_SkipNext__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/SkipNext */ "@material-ui/icons/SkipNext");
 /* harmony import */ var _material_ui_icons_SkipNext__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_SkipNext__WEBPACK_IMPORTED_MODULE_9__);
-var _jsxFileName = "C:\\Users\\mok.liu\\Projects\\resume\\containers\\projects\\projects.js";
+var _jsxFileName = "/Users/jeemok/tincode/resume/containers/projects/projects.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -1588,64 +1801,64 @@ function Projects() {
       lineNumber: 33
     },
     __self: this
-  }, "PichaEats (rebrand from The Picha Project) has been growing a lot over the years. The initial solution of using WordPress no longer work well with the size and has to grow. Building a new website system that comes with a ordering capability and integrate with external systems. making sure it is scalable for any requirements in the future. Integrate with external systems: Payment, Invoice, Chat, etc. Tracking Google Analytics and Pixels. Migration from existing wordpress server to GCP. Email client migration, Setup new client using ZOHO and migrated DNS. Development mode: Using staging environment and production."), __jsx("p", {
+  }, "PichaEats (rebrand from The Picha Project) has been growing a lot over the years. The initial solution of using WordPress no longer work well with the size and has to grow. Building a new website system that comes with a ordering capability and integrate with external systems. making sure it is scalable for any requirements in the future. Integrate with external systems: Payment, Invoice, Chat, etc. Tracking Google Analytics and Pixels. Migration from existing wordpress server to GCP. Email client migration, Setup new client using ZOHO and migrated DNS. Development mode: Using staging environment and production. Tech Stacks: React, Material UI, Express Repository and Task Management: GitHub"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 48
     },
     __self: this
   }, "Website", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 50
     },
     __self: this
   }), "All the static sites. SEO and designs."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 53
     },
     __self: this
   }, "Cart", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 55
     },
     __self: this
   }), "Items to cart and checkout. Google map API for real data address. Persistency of user's cart. Promo code system."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 59
     },
     __self: this
   }, "Catering", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 61
     },
     __self: this
   }), "Customize menu."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 64
     },
     __self: this
   }, "Management Backend", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 66
     },
     __self: this
   }), "Delivery area, menu, items, etc."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 69
     },
     __self: this
   }, "Blog", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 71
     },
     __self: this
   }), "using wordpress?")), __jsx("div", {
@@ -1654,19 +1867,19 @@ function Projects() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 76
     },
     __self: this
   }, "Instructors management system", __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 78
     },
     __self: this
   }, "June 2019"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 81
     },
     __self: this
   }, "to manage daily instructors shifts.")), __jsx("div", {
@@ -1675,37 +1888,37 @@ function Projects() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 87
     },
     __self: this
   }, "OKingLegend App", __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 89
     },
     __self: this
   }, "Sep 2017"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 92
     },
     __self: this
   }, "Built native iOS & Android application using React Native through Expo.io tool; Uses WordPress Woocommerce as backend; The application supports PayPal and COD payment; Published on both AppStore & Google Play Store:", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 94
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 95
     },
     __self: this
   }), "https://itunes.apple.com/us/app/okinglegend/id1236763942?mt=8&ign-mpt=uo%3D4", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 97
     },
     __self: this
   }), "https://play.google.com/store/apps/details?id=com.okinglegend.okinglegendapp&hl=en")), __jsx("div", {
@@ -1714,37 +1927,37 @@ function Projects() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 102
     },
     __self: this
   }, "LFC Malaysia App", __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 104
     },
     __self: this
   }, "Jun 2017"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 107
     },
     __self: this
   }, "Built native ios & Android application using React Native through Expo.io tool; Uses WordPress Woocommerce as backend; The application supports PayPal and COD payment; Published on both AppStore & Google Play Store:", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 109
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 110
     },
     __self: this
   }), "https://itunes.apple.com/us/app/lfc-malaysia/id1215617599?mt=8", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 112
     },
     __self: this
   }), "https://play.google.com/store/apps/details?id=com.nav.lfc&hl=en")));
@@ -1766,103 +1979,89 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\mok.liu\\Projects\\resume\\containers\\reviews\\reviews.js";
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_reviews_review__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/reviews/review */ "./components/reviews/review.js");
+var _jsxFileName = "/Users/jeemok/tincode/resume/containers/reviews/reviews.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
+
+
 const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
-  root: {
-    '& p': {
-      fontSize: '0.8rem'
-    }
+  root: {// '& p': {
+    //   fontSize: '0.8rem',
+    // },
   }
 }));
 function Reviews() {
   const classes = useStyles();
   const theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["useTheme"])();
-  return __jsx("div", {
+  return __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
     className: classes.root,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 19
     },
     __self: this
-  }, "Manager Assessments", __jsx("div", {
-    style: {
-      margin: 10
-    },
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
+    variant: "h5",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     },
     __self: this
-  }, "HTM", __jsx("div", {
-    style: {
-      border: '1px solid gray',
-      padding: '10px'
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }, __jsx("p", {
+  }, "Manager Assessments"), __jsx(_components_reviews_review__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    title: "Provides useful, insightful analysis or potential applicants.",
+    by: "by Benjamin Metcalf (System Manager, HTM Niseko)",
+    date: "Aug 31, 2018",
+    descrption: `
+          Mok develops functional, reliable, easy to use products, while maintaining extremely high standards
+          for coding, security, documentation and testing.
+          Really good suggestions for problem solving and improvements - thinking beyond the specification and
+          about delivering the best result for HTM.
+          He is also a really positive influence within the team - he is fun to work with!
+          Provides useful, insightful analysis or potential applicants.
+        `,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
     },
     __self: this
-  }, "Completed: Aug 31, 2018 at 9:57 PM by Benjamin Metcalf"), __jsx("p", {
+  }), __jsx(_components_reviews_review__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    title: "He produces fantastic, well-functioning results and is a pleasure to work with!",
+    by: "by Benjamin Metcalf (System Manager, HTM Niseko)",
+    date: "Apr 30, 2018",
+    descrption: `
+          Last review I wrote how impressed I was with all Mok had learned. 3 months later I don't think like that any more;
+          I see Mok as one of the most important and knowledgeable parts of our team.
+          His dedication to quality code and structure is fantastic and I rely of him a lot to watch over that for the team.
+          He produces fantastic, well-functioning results and is a pleasure to work with!
+          I very much appreciate Mok coming to me recently with his concerns. Another example of how he is dedicated to doing quality work.
+        `,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 38
     },
     __self: this
-  }, "Mok develops functional, reliable, easy to use products, while maintaining extremely high standards for coding, security, documentation and testing. Really good suggestions for problem solving and improvements - thinking beyond the specification and about delivering the best result for HTM. He is also a really positive influence within the team - he is fun to work with! Provides useful, insightful analysis or potential applicants.")), __jsx("div", {
-    style: {
-      border: '1px solid gray',
-      padding: '10px'
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  }, __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  }, "Completed: Apr 30, 2018 at 8:31 AM by Benjamin Metcalf"), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }, "Last review I wrote how impressed I was with all Mok had learned. 3 months later I don't think like that any more; I see Mok as one of the most important and knowledgeable parts of our team. His dedication to quality code and structure is fantastic and I rely of him a lot to watch over that for the team. He produces fantastic, well-functioning results and is a pleasure to work with! I very much appreciate Mok coming to me recently with his concerns. Another example of how he is dedicated to doing quality work.")), __jsx("div", {
-    style: {
-      border: '1px solid gray',
-      padding: '10px'
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  }, __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
-  }, "Completed: Jan 28, 2018 at 11:03 PM by Benjamin Metcalf"), __jsx("p", {
+  }), __jsx(_components_reviews_review__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    title: "His development produces really great results.",
+    by: "by Benjamin Metcalf (System Manager, HTM Niseko)",
+    date: "Jan 28, 2018",
+    descrption: `
+          I am very impressed.
+          His development produces really great results.
+          He thinks about the right approach to solving a problem and the fastest approach and
+          makes a choice between those two (or a middle ground), as appropriate.
+          He stays positive despite repeated changes and set-backs (for Bamboo+) and is a pleasure to work with.
+          Tests his development from a user perspective, as well as a developer.
+        `,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 51
     },
     __self: this
-  }, "Mok has learnt A LOT in the past year, I am very impressed. His development produces really great results. He thinks about the right approach to solving a problem and the fastest approach and makes a choice between those two (or a middle ground), as appropriate. He stays positive despite repeated changes and set-backs (for Bamboo+) and is a pleasure to work with. Tests his development from a user perspective, as well as a developer."))));
+  }));
 }
 
 /***/ }),
@@ -1874,7 +2073,7 @@ function Reviews() {
 /*! exports provided: 0, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"title\":\"B.Sc. (Hons) Computing\",\"school\":\"UCSI University, Kuala Lumpur\",\"from\":\"2013-05-01\",\"to\":\"2016-05-01\",\"descriptions\":[\"CGPA: 3.95 / 4.00\"],\"tags\":[\"First Class Honour\"]}]");
+module.exports = JSON.parse("[{\"title\":\"B.Sc. (Hons) Computing\",\"school\":\"UCSI University, Kuala Lumpur\",\"from\":\"2013-05-01\",\"to\":\"2016-05-01\",\"descriptions\":[\"First Class Honour (CGPA: 3.95 / 4.00)\"]}]");
 
 /***/ }),
 
@@ -1885,7 +2084,7 @@ module.exports = JSON.parse("[{\"title\":\"B.Sc. (Hons) Computing\",\"school\":\
 /*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"title\":\"Lead Developer\",\"company\":\"Hokkaido Tourism Management Niseko\",\"location\":\"Hokkaido, Japan\",\"from\":\"2019-05-01\",\"descriptions\":[\"Hands on React development everyday. We practice DevOps culture and Agile methodology for project development. Main tools that we use here including Taiga Kanban for tasks & backlogs, BitBucket to store our code repository, Atlassian Confuence for documentation, and CircleCI for continuous integration. Setup with Bitbucket webhook functionality that whenever our main repository is changed, it will notify CircleCI and Taiga.io about the changes.\",\"We practice Test Driven Development and our testing libraries including Jest, Mocha, Chai, Sinon, Enzyme and etc. We use ESLint for linting with additional rules. Other tools including: Egnyte (legacy system to share fles within the company) & Postman (handling REST & E2E live testing)\"],\"projects\":[{\"name\":\"Passport Scanner\",\"tags\":[\"Java\",\"Loopback v4\"]},{\"name\":\"Guest Portal\",\"description\":\"Challenges: Guest relations, multiple source of truths\",\"tags\":[\"Material UI\"]}],\"tags\":[\"DevOps\",\"Agile\",\"REST\",\"SaaS\",\"Google Cloud Platform\",\"Docker\",\"Kubernetes\"]},{\"title\":\"Full Stack Developer\",\"company\":\"Hokkaido Tourism Management Niseko\",\"location\":\"Hokkaido, Japan\",\"from\":\"2017-01-01\",\"to\":\"2019-05-01\",\"descriptions\":[\"Working remotely for 11 months.\"],\"projects\":[{\"name\":\"Storefront\",\"description\":\"Storefront is the public-facing booking portal. Through this channel people can browse HTM properties, see the prices and book or quote them, also take payments through the portal. All of the information comes from GuestCentrix and also ends up in the GuestCentrix.\",\"tags\":[]},{\"name\":\"Bamboo+\",\"description\":\"Staff shift management system. Challenges: Timezone, shift calculation.\",\"descriptions\":[\"HTM Internal (a.k.a. Bamboo Plus) is development project for internal tools. The goal is to unify all of the small tools we use throughout the company under one roof and also to make them easier and more convenient to use. Integration of the above systems replaces the existing Timesheet system and interfaces with third-party software - Bamboo HR in several ways.\"],\"tags\":[]},{\"name\":\"Owners Portal\",\"description\":\"The Owner Portal is a portal for owners of HTM managed accommodations. Designed to be able to view and manage many of the major aspects of their property ownership through the new portal; including viewing their Owner Statements, making and changing their Owner Bookings, requesting and viewing payments and transactions, managing personal details, viewing Occupancy information for their room, and communicating with our Owner Team.\",\"tags\":[]},{\"name\":\"Admin Portal\",\"description\":\"Serves as the administration portal, for multiple purposes. Marketing to manage properties information and images connecting with Amazon Web Services.\",\"tags\":[]}],\"tags\":[\"Remote\"]},{\"title\":\"Project Manager / App Developer\",\"company\":\"MYCiTY SME\",\"location\":\"Kuala Lumpur, Malaysia\",\"from\":\"2017-01-01\",\"to\":\"2017-11-01\",\"descriptions\":[\"Met clients and gather requirements to hands on development to publish to PlayStore & AppStore. App features built including: SSO login (Facebook), user registration, payment integrations (Paypal also Cash on Delivery), Wordpress blog integrations, WooCommerce backend integrations (Products management, app features controls, orders tracking, wishlist management, fles managements, etc)\",\"From meeting clients and gather requirements to hands-on development to publish to PlayStore & AppStore. App features built including SSO login (Facebook), user registration, payment integrations (Paypal also Cash on Delivery), Wordpress blog integrations, WooCommerce backend integrations (Products management, app features controls, orders tracking, wishlist management, files management, etc.)\"],\"projects\":[{\"name\":\"OKingLegend Mobile App\",\"tags\":[]},{\"name\":\"LFC Malaysia Mobile App\",\"tags\":[]}]},{\"title\":\"IT Support Intern\",\"company\":\"Hokkaido Tourism Management Niseko\",\"location\":\"Hokkaido, Japan\",\"from\":\"2016-06-01\",\"to\":\"2016-12-01\",\"descriptions\":[\"My main job scopes are support and resolve internal company tickets, create documentation, manual and SOP for softwares and web tools for stafs, and maintain all the IT infrastructures within HTM. During my free time at work, I built a few systems to improve the existing ones:\"],\"projects\":[{\"name\":\"Inventory System\",\"description\":\"New web application system built with PHP & JavaScript. Replaced the existing Excel Inventory System used within the company with added features: Report printing, users management, multiple users view & printer management subsystem.\",\"tags\":[]},{\"name\":\"FlipKey System\",\"description\":\"An automated PHP script system used for managing hotels room information via WSDL & SOAP requests using cURL.\",\"tags\":[]},{\"name\":\"Contracts Creator\",\"description\":\"An automated tool built for HR department to create a large number of contracts. This tool was built using Macros in Microsoft Excel; it retrieves staff details from a .csv file, merges the information into a .doc template, and finally export each of them as a new contract file.\",\"tags\":[]},{\"name\":\"Google Email Extractor\",\"description\":\"A micro system written in Google Apps Script (GAS) used to compile the latest list of HTM email addresses from Google Contact; Scheduled to send the list back via email.\",\"tags\":[\"Google App Script\"]}]},{\"title\":\"Web Developer\",\"company\":\"The Picha Project\",\"location\":\"Kuala Lumpur, Malaysia\",\"from\":\"2016-03-01\",\"to\":\"2016-06-01\",\"descriptions\":[\"Publish a website for a social enterprise called The Picha Project, which provides fnancial empowerment to the marginalised groups in Malaysia. Live: www.pichaproject.com\"]},{\"title\":\"Web Developer\",\"company\":\"Mevicco Group\",\"location\":\"Kuala Lumpur, Malaysia\",\"from\":\"2015-02-01\",\"to\":\"2015-07-01\",\"descriptions\":[\"Publish and manage E-Commerce online fashion store using OpenCart. Maintain the system and resolve all the system problems and relevant faults.\"]},{\"title\":\"Web Developer Intern\",\"company\":\"Sliver Interactive\",\"location\":\"Kuala Lumpur, Malaysia\",\"from\":\"2014-11-01\",\"to\":\"2014-12-01\",\"descriptions\":[\"Built a small PHP system replacing the existing Excel system, that used for managing new website content more efciently and shorten the overall work progress. Install custom modules based on clients’ request, and learnt to enhance website’s ranking using Search Engine Optimisation.\"]},{\"title\":\"IT Operation Supervisor\",\"company\":\"The Champs Cafe\",\"location\":\"Kuala Lumpur, Malaysia\",\"from\":\"2014-05-01\",\"to\":\"2014-10-01\",\"descriptions\":[\"Built the official website and managed the social media site for the business. Trained and mentored new staff to update the system. Also designed the business logo for the new franchise brand Veggie Express which is now well- known across Malaysia in various location.\"]}]");
+module.exports = JSON.parse("[{\"title\":\"Lead Developer\",\"company\":\"Hokkaido Tourism Management Niseko\",\"location\":\"Hokkaido, Japan\",\"from\":\"2019-05-01\",\"descriptions\":[\"Hands on React development everyday. We practice DevOps culture and Agile methodology for project development. Main tools that we use here including Taiga Kanban for tasks & backlogs, BitBucket to store our code repository, Atlassian Confuence for documentation, and CircleCI for continuous integration. Setup with Bitbucket webhook functionality that whenever our main repository is changed, it will notify CircleCI and Taiga.io about the changes.\",\"We practice Test Driven Development and our testing libraries including Jest, Mocha, Chai, Sinon, Enzyme and etc. We use ESLint for linting with additional rules. Other tools including: Egnyte (legacy system to share fles within the company) & Postman (handling REST & E2E live testing)\",\"Task Management: Jira\"],\"projects\":[{\"name\":\"Passport Scanner\",\"tags\":[\"Java\",\"Loopback v4\"]},{\"name\":\"Guest Portal\",\"description\":\"Challenges: Guest relations, multiple source of truths\",\"tags\":[\"Material UI\"]}],\"tags\":[\"DevOps\",\"Agile\",\"REST\",\"SaaS\",\"Google Cloud Platform\",\"Docker\",\"Kubernetes\"]},{\"title\":\"Full Stack Developer\",\"company\":\"Hokkaido Tourism Management Niseko\",\"location\":\"Hokkaido, Japan\",\"from\":\"2017-01-01\",\"to\":\"2019-05-01\",\"descriptions\":[\"Working remotely for 11 months. \\n Productivity tracking tools: Toggle\",\"Task Management: Taiga\"],\"projects\":[{\"name\":\"Storefront\",\"description\":\"Storefront is the public-facing booking portal. Through this channel people can browse HTM properties, see the prices and book or quote them, also take payments through the portal. All of the information comes from GuestCentrix and also ends up in the GuestCentrix.\",\"tags\":[]},{\"name\":\"Bamboo+\",\"description\":\"Staff shift management system. Challenges: Timezone, shift calculation.\",\"descriptions\":[\"HTM Internal (a.k.a. Bamboo Plus) is development project for internal tools. The goal is to unify all of the small tools we use throughout the company under one roof and also to make them easier and more convenient to use. Integration of the above systems replaces the existing Timesheet system and interfaces with third-party software - Bamboo HR in several ways.\"],\"tags\":[]},{\"name\":\"Owners Portal\",\"description\":\"The Owner Portal is a portal for owners of HTM managed accommodations. Designed to be able to view and manage many of the major aspects of their property ownership through the new portal; including viewing their Owner Statements, making and changing their Owner Bookings, requesting and viewing payments and transactions, managing personal details, viewing Occupancy information for their room, and communicating with our Owner Team.\",\"tags\":[]},{\"name\":\"Admin Portal\",\"description\":\"Serves as the administration portal, for multiple purposes. Marketing to manage properties information and images connecting with Amazon Web Services.\",\"tags\":[]}],\"tags\":[\"Remote\"]},{\"title\":\"Project Manager / App Developer\",\"company\":\"MYCiTY SME\",\"location\":\"Kuala Lumpur, Malaysia\",\"from\":\"2017-01-01\",\"to\":\"2017-11-01\",\"descriptions\":[\"Met clients and gather requirements to hands on development to publish to PlayStore & AppStore. App features built including: SSO login (Facebook), user registration, payment integrations (Paypal also Cash on Delivery), Wordpress blog integrations, WooCommerce backend integrations (Products management, app features controls, orders tracking, wishlist management, fles managements, etc)\",\"From meeting clients and gather requirements to hands-on development to publish to PlayStore & AppStore. App features built including SSO login (Facebook), user registration, payment integrations (Paypal also Cash on Delivery), Wordpress blog integrations, WooCommerce backend integrations (Products management, app features controls, orders tracking, wishlist management, files management, etc.)\"],\"projects\":[{\"name\":\"OKingLegend Mobile App\",\"tags\":[]},{\"name\":\"LFC Malaysia Mobile App\",\"tags\":[]}]},{\"title\":\"IT Support Intern\",\"company\":\"Hokkaido Tourism Management Niseko\",\"location\":\"Hokkaido, Japan\",\"from\":\"2016-06-01\",\"to\":\"2016-12-01\",\"descriptions\":[\"My main job scopes are support and resolve internal company tickets, create documentation, manual and SOP for softwares and web tools for stafs, and maintain all the IT infrastructures within HTM. During my free time at work, I built a few systems to improve the existing ones:\"],\"projects\":[{\"name\":\"Inventory System\",\"description\":\"New web application system built with PHP & JavaScript. Replaced the existing Excel Inventory System used within the company with added features: Report printing, users management, multiple users view & printer management subsystem.\",\"tags\":[]},{\"name\":\"FlipKey System\",\"description\":\"An automated PHP script system used for managing hotels room information via WSDL & SOAP requests using cURL.\",\"tags\":[]},{\"name\":\"Contracts Creator\",\"description\":\"An automated tool built for HR department to create a large number of contracts. This tool was built using Macros in Microsoft Excel; it retrieves staff details from a .csv file, merges the information into a .doc template, and finally export each of them as a new contract file.\",\"tags\":[]},{\"name\":\"Google Email Extractor\",\"description\":\"A micro system written in Google Apps Script (GAS) used to compile the latest list of HTM email addresses from Google Contact; Scheduled to send the list back via email.\",\"tags\":[\"Google App Script\"]}]},{\"title\":\"Web Developer\",\"company\":\"The Picha Project\",\"location\":\"Kuala Lumpur, Malaysia\",\"from\":\"2016-03-01\",\"to\":\"2016-06-01\",\"descriptions\":[\"Publish a website for a social enterprise called The Picha Project, which provides fnancial empowerment to the marginalised groups in Malaysia. Live: www.pichaproject.com\"]},{\"title\":\"Web Developer\",\"company\":\"Mevicco Group\",\"location\":\"Kuala Lumpur, Malaysia\",\"from\":\"2015-02-01\",\"to\":\"2015-07-01\",\"descriptions\":[\"Publish and manage E-Commerce online fashion store using OpenCart. Maintain the system and resolve all the system problems and relevant faults.\"]},{\"title\":\"Web Developer Intern\",\"company\":\"Sliver Interactive\",\"location\":\"Kuala Lumpur, Malaysia\",\"from\":\"2014-11-01\",\"to\":\"2014-12-01\",\"descriptions\":[\"Built a small PHP system replacing the existing Excel system, that used for managing new website content more efciently and shorten the overall work progress. Install custom modules based on clients’ request, and learnt to enhance website’s ranking using Search Engine Optimisation.\"]},{\"title\":\"IT Operation Supervisor\",\"company\":\"The Champs Cafe\",\"location\":\"Kuala Lumpur, Malaysia\",\"from\":\"2014-05-01\",\"to\":\"2014-10-01\",\"descriptions\":[\"Built the official website and managed the social media site for the business. Trained and mentored new staff to update the system. Also designed the business logo for the new franchise brand Veggie Express which is now well- known across Malaysia in various location.\"]}]");
 
 /***/ }),
 
@@ -1916,17 +2115,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Divider */ "@material-ui/core/Divider");
 /* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _containers_biography_me__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../containers/biography/me */ "./containers/biography/me.js");
-/* harmony import */ var _containers_biography_languages__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../containers/biography/languages */ "./containers/biography/languages.js");
-/* harmony import */ var _containers_experiences_experiences__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../containers/experiences/experiences */ "./containers/experiences/experiences.js");
-/* harmony import */ var _containers_education_education__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../containers/education/education */ "./containers/education/education.js");
-/* harmony import */ var _containers_awards_awards__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../containers/awards/awards */ "./containers/awards/awards.js");
-/* harmony import */ var _containers_awards_news__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../containers/awards/news */ "./containers/awards/news.js");
-/* harmony import */ var _containers_projects_projects__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../containers/projects/projects */ "./containers/projects/projects.js");
-/* harmony import */ var _containers_openSources_libraries__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../containers/openSources/libraries */ "./containers/openSources/libraries.js");
-/* harmony import */ var _containers_reviews_reviews__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../containers/reviews/reviews */ "./containers/reviews/reviews.js");
-var _jsxFileName = "C:\\Users\\mok.liu\\Projects\\resume\\pages\\index.js";
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Grid */ "@material-ui/core/Grid");
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _containers_biography_me__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../containers/biography/me */ "./containers/biography/me.js");
+/* harmony import */ var _containers_biography_languages__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../containers/biography/languages */ "./containers/biography/languages.js");
+/* harmony import */ var _containers_experiences_experiences__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../containers/experiences/experiences */ "./containers/experiences/experiences.js");
+/* harmony import */ var _containers_education_education__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../containers/education/education */ "./containers/education/education.js");
+/* harmony import */ var _containers_awards_awards__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../containers/awards/awards */ "./containers/awards/awards.js");
+/* harmony import */ var _containers_awards_news__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../containers/awards/news */ "./containers/awards/news.js");
+/* harmony import */ var _containers_projects_projects__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../containers/projects/projects */ "./containers/projects/projects.js");
+/* harmony import */ var _containers_openSources_libraries__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../containers/openSources/libraries */ "./containers/openSources/libraries.js");
+/* harmony import */ var _containers_reviews_reviews__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../containers/reviews/reviews */ "./containers/reviews/reviews.js");
+/* harmony import */ var _containers_hobbies_hobbies__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../containers/hobbies/hobbies */ "./containers/hobbies/hobbies.js");
+var _jsxFileName = "/Users/jeemok/tincode/resume/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 
 
 
@@ -1950,25 +2154,13 @@ function Index() {
     maxWidth: "md",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, __jsx(_containers_biography_me__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 24
     },
     __self: this
-  }), __jsx("br", {
+  }, __jsx(_containers_biography_me__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
-    },
-    __self: this
-  }), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
     },
     __self: this
   }), __jsx("br", {
@@ -1977,34 +2169,50 @@ function Index() {
       lineNumber: 28
     },
     __self: this
-  }), __jsx(_containers_experiences_experiences__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: this
-  }), __jsx("br", {
+  }), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    container: true,
+    spacing: 3,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 32
     },
     __self: this
-  }), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    item: true,
+    xs: 8,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
     },
     __self: this
-  }), __jsx("br", {
+  }, __jsx(_containers_experiences_experiences__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
     },
     __self: this
-  }), __jsx(_containers_projects_projects__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 36
+    },
+    __self: this
+  }), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
     },
     __self: this
   }), __jsx("br", {
@@ -2013,22 +2221,22 @@ function Index() {
       lineNumber: 38
     },
     __self: this
-  }), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }), __jsx("br", {
+  }), __jsx(_containers_projects_projects__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40
     },
     __self: this
-  }), __jsx(_containers_openSources_libraries__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 42
+    },
+    __self: this
+  }), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
     },
     __self: this
   }), __jsx("br", {
@@ -2037,34 +2245,24 @@ function Index() {
       lineNumber: 44
     },
     __self: this
-  }), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: this
-  }), __jsx("br", {
+  }), __jsx(_containers_reviews_reviews__WEBPACK_IMPORTED_MODULE_12__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 46
     },
     __self: this
-  }), __jsx(_containers_awards_awards__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  })), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    item: true,
+    xs: 4,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 49
     },
     __self: this
-  }), __jsx("br", {
+  }, __jsx(_containers_education_education__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 50
-    },
-    __self: this
-  }), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51
     },
     __self: this
   }), __jsx("br", {
@@ -2073,22 +2271,22 @@ function Index() {
       lineNumber: 52
     },
     __self: this
-  }), __jsx(_containers_awards_news__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 53
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 54
     },
     __self: this
-  }), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }), __jsx(_containers_awards_awards__WEBPACK_IMPORTED_MODULE_8__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 56
     },
     __self: this
   }), __jsx("br", {
@@ -2097,22 +2295,22 @@ function Index() {
       lineNumber: 58
     },
     __self: this
-  }), __jsx(_containers_education_education__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 59
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 60
     },
     __self: this
-  }), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }), __jsx(_containers_openSources_libraries__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 62
     },
     __self: this
   }), __jsx("br", {
@@ -2121,22 +2319,22 @@ function Index() {
       lineNumber: 64
     },
     __self: this
-  }), __jsx(_containers_reviews_reviews__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  }), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 65
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 66
     },
     __self: this
-  }), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }), __jsx(_containers_awards_news__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 68
     },
     __self: this
   }), __jsx("br", {
@@ -2145,13 +2343,49 @@ function Index() {
       lineNumber: 70
     },
     __self: this
-  }), __jsx(_containers_biography_languages__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: this
+  }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 72
     },
     __self: this
-  }));
+  }), __jsx(_containers_biography_languages__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74
+    },
+    __self: this
+  }), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76
+    },
+    __self: this
+  }), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77
+    },
+    __self: this
+  }), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78
+    },
+    __self: this
+  }), __jsx(_containers_hobbies_hobbies__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80
+    },
+    __self: this
+  }))));
 }
 
 /***/ }),
@@ -2163,8 +2397,19 @@ function Index() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\mok.liu\Projects\resume\pages\index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/jeemok/tincode/resume/pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "@material-ui/core":
+/*!************************************!*\
+  !*** external "@material-ui/core" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core");
 
 /***/ }),
 
@@ -2286,6 +2531,17 @@ module.exports = require("@material-ui/core/ExpansionPanelDetails");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/ExpansionPanelSummary");
+
+/***/ }),
+
+/***/ "@material-ui/core/Grid":
+/*!*****************************************!*\
+  !*** external "@material-ui/core/Grid" ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Grid");
 
 /***/ }),
 

@@ -57,7 +57,7 @@ export default function MakeItYourM2U() {
 
         <img
           src="https://nodei.co/npm/better-npm-audit.png?downloads=true&downloadRank=true&stars=true"
-          style={{ display: 'block', maxWidth: '300px' }}
+          style={{ display: 'block', maxWidth: '250px' }}
         />
       </div>
     </div>

@@ -74,7 +74,7 @@ export default function MakeItYourM2U() {
         </div>
       </div>
 
-      <img src={GCP_ICON} alt="GCP icon" style={{ maxWidth: 50, float: 'right' }} />
+      <img src={GCP_ICON} alt="GCP icon" style={{ maxWidth: 50, position: 'absolute', top: 10, right: 10 }} />
     </div>
   );
 }

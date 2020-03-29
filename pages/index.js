@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import Divider from '@material-ui/core/Divider';
+import Grid from '@material-ui/core/Grid';
 
 import Biography from '../containers/biography/me';
 import Languages from '../containers/biography/languages';
@@ -11,6 +12,7 @@ import News from '../containers/awards/news';
 import Projects from '../containers/projects/projects';
 import OpenSources from '../containers/openSources/libraries';
 import Reviews from '../containers/reviews/reviews';
+import Hobbies from '../containers/hobbies/hobbies';
 
 // Ref: https://stackoverflow.com/cv/mok
 
@@ -27,49 +29,57 @@ export default function Index() {
       <Divider />
       <br />
 
-      <Job />
+      <Grid container spacing={3}>
+        <Grid item xs={8}>
+          <Job />
 
-      <br />
-      <Divider />
-      <br />
+          <br />
+          <Divider />
+          <br />
 
-      <Projects />
+          <Projects />
 
-      <br />
-      <Divider />
-      <br />
+          <br />
+          <Divider />
+          <br />
 
-      <OpenSources />
+          <Reviews />
+        </Grid>
 
-      <br />
-      <Divider />
-      <br />
+        <Grid item xs={4}>
+          <Education />
 
-      <Awards />
+          <br />
+          <Divider />
+          <br />
 
-      <br />
-      <Divider />
-      <br />
+          <Awards />
 
-      <News />
+          <br />
+          <Divider />
+          <br />
 
-      <br />
-      <Divider />
-      <br />
+          <OpenSources />
 
-      <Education />
+          <br />
+          <Divider />
+          <br />
 
-      <br />
-      <Divider />
-      <br />
+          <News />
 
-      <Reviews />
+          <br />
+          <Divider />
+          <br />
 
-      <br />
-      <Divider />
-      <br />
+          <Languages />
 
-      <Languages />
+          <br />
+          <Divider />
+          <br />
+
+          <Hobbies />
+        </Grid>
+      </Grid>
     </Container>
   );
 }
