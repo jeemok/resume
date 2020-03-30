@@ -7,6 +7,7 @@ import Biography from '../containers/biography/me';
 import Languages from '../containers/biography/languages';
 import Job from '../containers/experiences/experiences';
 import Education from '../containers/education/education';
+import StudentBodies from '../containers/education/studentBodies';
 import Awards from '../containers/awards/awards';
 import News from '../containers/awards/news';
 import Projects from '../containers/projects/projects';
@@ -65,13 +66,19 @@ export default function Index() {
           <Divider />
           <br />
 
-          <News />
+          <Languages />
 
           <br />
           <Divider />
           <br />
 
-          <Languages />
+          <StudentBodies />
+
+          <br />
+          <Divider />
+          <br />
+
+          <News />
 
           <br />
           <Divider />

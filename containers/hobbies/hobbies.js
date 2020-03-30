@@ -4,6 +4,10 @@ import { Box, Typography } from '@material-ui/core';
 import Header from '../../components/common/header';
 
 const useStyles = makeStyles(theme => ({
+  description: {
+    color: 'grey',
+    fontSize: '0.8rem',
+  },
 }));
 
 export default function Hobbies() {
@@ -15,11 +19,11 @@ export default function Hobbies() {
       <Header title="Hobbies" />
 
       <Box m={1}>
-        <Typography variant="subtitle">
+        <Typography>
           Snowboarding
         </Typography>
-        <Typography variant="body2">
-          Canada Avalanche Safety training 1 certified
+        <Typography className={classes.description}>
+          Certified Canada Avalanche Safety Training
         </Typography>
       </Box>
     </Box>
